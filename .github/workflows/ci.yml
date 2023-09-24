@@ -19,6 +19,7 @@ jobs:
       FULLNAME: "TEST Marry"
     steps:
       - run: echo "build job ${{ github.actor }}"
+      - run: echo ${{vars.COMPANY_NAME}}
       - run: echo "My host is $MY_HOST and $FULLNAME"
 
   
